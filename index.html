@@ -280,14 +280,40 @@
         constructor(tipo, placa, año) {
           super(tipo, placa);
           this.año = año;
+          this.color = null; // para utilizar el metodo get
         }
 
         tipoDeTransporte() {
           console.log("transporte muy liviano");
         }
+
+        static contaminacion() {
+          // etodo estatico
+          console.log("smook");
+        }
+
+        // obteniendo un valor = atributo, con get
+        get getColores() {
+          return this.color;
+        }
+
+        // modificando un valor = atributo, con set
+        set setColor(color) {
+          this.color = color;
+        }
       }
+      // utilizacion del metodo estatico dentro de la misma clase
+      motocicleta.contaminacion();
+
       const honda = new motocicleta("honda", "prp,344", "2020");
       console.log(honda);
+
+      // ejecutando metodo get
+      console.log(honda.getColores);
+
+      //ejecutando metodo set
+      honda.setColor = "negro";
+      console.log(honda.getColores);
     </script>
   </body>
 </html>
