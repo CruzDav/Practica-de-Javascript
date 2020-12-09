@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURSO JAVA_SCRIPT 5</title>
+  </head>
+  <body>
+    <h1>mi sjhb</h1>
+
+    <script>
+      // let nombre = "david";
+      // let maria = "mary";
+      // console.log(nombre.length);
+
+      // let saludo = `
+      //   mi nombre es ${nombre} y ${maria}.
+      //   `;
+      // console.log(saludo);
+
+      // let ul = `
+      //   <ul>
+      //   <li>inv</li>
+      //   <li>prim</li>
+      //   <li>vera</li>
+      // </ul>.
+
+      //   `;
+
+      // console.log(ul);
+
+      // let a = 2;
+      // let b = 3;
+      // let c = "5.67";
+
+      // console.log(a + b);
+      // console.log(b + parseFloat(c));
+
+      // //*****************FUNCIONES**************
+
+      function unaFuncionQueDevueveValor() {
+        // console.log("uno");
+        // console.log("dos");
+        // console.log("tsssres");
+        //return 123456;
+      }
+      let veriable = unaFuncionQueDevueveValor();
+      // console.log(veriable);
+
+      function codigo(a, b) {
+        //console.log(a + b);
+      }
+
+      codigo(2, 4);
+      // console.log();
+
+      // Funcion declerada como funcion... llamada en cualquier parte del codigo
+      codigo(2, 4);
+
+      function codigo(a, b) {
+        //console.log(a + b);
+      }
+      codigo(2, 4);
+
+      // // Funcion declerada como variable
+      // //***************FUNCION ANONIMA O ARROUND FUNCTION
+
+      // const FuncionExpresada = function () {
+      //   //  console.log(
+      //   //     "esto es un arround Function y si la llamo antes de ser declarada me da un error"
+      //   //   );
+      // };
+      // FuncionExpresada();
+
+      // //*****************ARREGLOS******************
+      // let a = ["david", 12, true, [1, 2, 3]];
+      // // console.log(a);
+      // // console.log(a[0]);
+      // //metodo alterno para hacer arreglos
+      // const arreglonuevo = Array.of(1, 2, 3, 4, 5, 6);
+
+      // arreglonuevo.forEach(function (el) {
+      //   //console.log(el);
+      // });
+
+      // //*****************OBJETOS******************
+
+      // const David = {
+      //   nombre: "picho",
+      //   apellido: "toscano",
+      //   edad: 27,
+      //   pasatiempo: ["correr", "bailar"],
+      //   estado: true,
+      //   contacto: {
+      //     telefono: "2298877",
+      //     emai: "david15003@hotmail.com",
+      //   },
+      //   saludar: function () {
+      //     console.log(`hola mi don `);
+      //   },
+
+      //   decirMiNombre: function () {
+      //     console.log(
+      //       `hola mi nombre es ${this.nombre} tengo actualmente ${this.edad} años de edad y mi pasatiempo es ${this.pasatiempo}}`
+      //     );
+      //   },
+      // };
+
+      // console.log(David.contacto.emai);
+      // David.saludar();
+      // console.log(David.pasatiempo[1]);
+      // David.decirMiNombre();
+      // //***************
+
+      // const MiCarrera = {
+      //   nombre: "Mecatronica",
+      //   semestres: 9,
+      //   materias: ["logicos", "control", "mecanica"],
+      //   herramientas: function () {
+      //     console.log(
+      //       `hola mi carrera es ${this.nombre} tiene ${this.semestres} semestres y cruze por estas materias: ${this.materias}`
+      //     );
+      //   },
+      // };
+
+      // console.log(MiCarrera.nombre);
+      // console.log(MiCarrera.materias);
+      // console.log(MiCarrera.materias[2]);
+      // MiCarrera.herramientas();
+      // //***************
+
+      // const DiseñoDeElementos = {
+      //   profe: "Don H",
+      //   temas: {
+      //     columnas: ["larga", "esvelta", "corta"],
+      //     vigas: "estructurales",
+      //   },
+      //   resumen: function () {
+      //     console.log(
+      //       `en la carrera dictada por el profe ${this.profe} se dicto el tema vigas ${this.temas.vigas}  `
+      //     );
+      //   },
+      // };
+
+      // console.log(DiseñoDeElementos.profe);
+      // console.log(DiseñoDeElementos.temas.columnas);
+      // console.log(DiseñoDeElementos.temas);
+      // DiseñoDeElementos.resumen();
+      // //***************
+      // const FEF = {
+      //   nombre: "Ecuador",
+      //   jugadores: ["Valencia", "Kaviedes"],
+      //   colores: {
+      //     a: "amarillo",
+      //     b: "azul",
+      //     c: "rojo",
+      //   },
+      //   hinchas: function () {
+      //     console.log(
+      //       `La seeccion de ${this.nombre} se compone por estos jugadores: ${this.jugadores} y la bandera tiene los colores: ${this.colores.a}`
+      //     );
+      //   },
+      // };
+
+      // console.log(FEF.nombre);
+      // console.log(FEF.jugadores[1]);
+      // console.log(FEF.colores.b);
+      // FEF.hinchas();
+      // console.log(Object.keys(FEF)); // se usa para retornar todas los atributos en unarreglo
+
+      // try {
+      //   let numero = "y ";
+      //   if (isNaN(numero)) {
+      //     throw new Error(" no es un numero");
+      //   }
+      //   console.log(numero * 2);
+      // } catch (error) {
+      //   console.log(`se produjo un error en ${error}`);
+      // }
+
+      // CON FOR
+      // let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // for (i = 0; i < num.length; i++) {
+      //   //console.log(num[i]);
+      // }
+
+      //***************DESTRUCTURACION************************
+
+      // let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // const [a, b, c, d, e, f, g, h] = numeros;
+      // console.log(a, b, c, d, e, f, g, h);
+
+      // //con objetos
+
+      // const datos = {
+      //   nombre: "picho",
+      //   edad: 27,
+      //   sexo: "masculino",
+      // };
+      // const { nombre, edad, sexo } = datos;
+      // console.log(nombre, edad, sexo);
+
+      //************** ARROW FUNCTION****************
+      //con una sola linea de codigo >>> sin llaves >>> {}
+      // const arreglo = () => console.log("nueva forma de function");
+      // arreglo();
+      // /////// **** con parametro
+      // const saludar = (nombre) => console.log(`QUE TAL ${nombre}`);
+      // saludar("mi doooon");
+      // ///////  con parametro y sin parentesis ....>>>>autom
+      // const saludo = (apellido) => console.log(`Buen dia ${apellido}`);
+      // saludo("klever");
+      // ////// con los parametros y sin >>> return
+      // const adicion = (a, b) => a + b;
+      // console.log(adicion(4, 4));
+      ///// con varios parametros
+      // const varios = () => {
+      //   console.log("uno");
+      //   console.log("dos");
+      //   console.log("tres");
+      // };
+      // varios();
+      /////*** con For Each
+      // const NuevoArreglo = ["a", "b", "c"];
+      // NuevoArreglo.forEach((mi, index) =>
+      //   //console.log(`${mi} esta en ${index}`)
+      // );
+
+      // const varios = [9, 19, 13];
+      //varios.forEach((er, index) => console.log(`${er}`));
+
+      // *********** CLASES y Herencias /***************
+
+      // class perros {
+      //   constructor(nombre, raza) {
+      //     (this.nombre = nombre), (this.raza = raza);
+      //   }
+
+      //   sentarce() {
+      //     console.log("sit para sentarcec");
+      //   }
+
+      //   echarse() {
+      //     console.log("echate para echarce");
+      //   }
+      // }
+
+      // const romeo = new perros("romeo", "coocker");
+
+      // class gato extends perros {
+      //   constructor(nombre, raza, tamaño) {
+      //     super(nombre, raza);
+      //     this.tamaño = tamaño;
+      //   }
+      // }
+
+      // console.log(romeo);
+      // romeo.sentarce();
+      // romeo.echarse();
+
+      // const pancho = new gato("pepe", "runa", "pequeño");
+      // console.log(pancho);
+      //
+      //
+      //
+      //
+      //
+
+      class trasportes {
+        constructor(tipo, placa) {
+          this.tipo = tipo;
+          this.placa = placa;
+        }
+      }
+
+      const carro = new trasportes("CHAVROLET", "PCF,123");
+      console.log(carro);
+
+      class motocicleta extends trasportes {
+        constructor(tipo, placa, año) {
+          super(tipo, placa);
+          this.año = año;
+        }
+
+        tipoDeTransporte() {
+          console.log("transporte muy liviano");
+        }
+      }
+      const honda = new motocicleta("honda", "prp,344", "2020");
+      console.log(honda);
+    </script>
+  </body>
+</html>
