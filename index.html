@@ -266,54 +266,69 @@
       //
       //
 
-      class trasportes {
-        constructor(tipo, placa) {
-          this.tipo = tipo;
-          this.placa = placa;
-        }
-      }
+      // class trasportes {
+      //   constructor(tipo, placa) {
+      //     this.tipo = tipo;
+      //     this.placa = placa;
+      //   }
+      // }
 
-      const carro = new trasportes("CHAVROLET", "PCF,123");
-      console.log(carro);
+      // const carro = new trasportes("CHAVROLET", "PCF,123");
+      // console.log(carro);
 
-      class motocicleta extends trasportes {
-        constructor(tipo, placa, año) {
-          super(tipo, placa);
-          this.año = año;
-          this.color = null; // para utilizar el metodo get
-        }
+      // class motocicleta extends trasportes {
+      //   constructor(tipo, placa, año) {
+      //     super(tipo, placa);
+      //     this.año = año;
+      //     this.color = null; // para utilizar el metodo get
+      //   }
 
-        tipoDeTransporte() {
-          console.log("transporte muy liviano");
-        }
+      //   tipoDeTransporte() {
+      //     console.log("transporte muy liviano");
+      //   }
 
-        static contaminacion() {
-          // etodo estatico
-          console.log("smook");
-        }
+      //   static contaminacion() {
+      //     // etodo estatico
+      //     console.log("smook");
+      //   }
 
-        // obteniendo un valor = atributo, con get
-        get getColores() {
-          return this.color;
-        }
+      //   // obteniendo un valor = atributo, con get
+      //   get getColores() {
+      //     return this.color;
+      //   }
 
-        // modificando un valor = atributo, con set
-        set setColor(color) {
-          this.color = color;
-        }
-      }
-      // utilizacion del metodo estatico dentro de la misma clase
-      motocicleta.contaminacion();
+      //   // modificando un valor = atributo, con set
+      //   set setColor(color) {
+      //     this.color = color;
+      //   }
+      // }
+      // // utilizacion del metodo estatico dentro de la misma clase
+      // motocicleta.contaminacion();
 
-      const honda = new motocicleta("honda", "prp,344", "2020");
-      console.log(honda);
+      // const honda = new motocicleta("honda", "prp,344", "2020");
+      // console.log(honda);
 
-      // ejecutando metodo get
-      console.log(honda.getColores);
+      // // ejecutando metodo get
+      // console.log(honda.getColores);
 
-      //ejecutando metodo set
-      honda.setColor = "negro";
-      console.log(honda.getColores);
+      // //ejecutando metodo set
+      // honda.setColor = "negro";
+      // console.log(honda.getColores);
+      //
+
+      //************* ALERTAS , CONFIRMACIONES Y AVISOS con el usuario***********
+
+      //
+      // alert("cuidado");
+      // confirm("confirme para continuar");
+      // prompt("ingrese se peticion ");
+
+      let alerta = alert("ADVERTENCIA"),
+        confirmacion = confirm("CONFIRME"),
+        avisos = prompt("ACCEDA CON UNA PINION");
+      console.log(alerta);
+      console.log(confirmacion);
+      console.log(avisos);
     </script>
   </body>
 </html>
